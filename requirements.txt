@@ -1,0 +1,23 @@
+# Training / export
+ultralytics>=8.2.0
+torch>=2.2.0
+onnx>=1.16.0
+onnxsim>=0.4.36
+onnxruntime-gpu>=1.18.0
+
+# TensorRT optimization + benchmarking
+# (tensorrt itself typically comes from NVIDIA's apt/pip index or the
+#  Jetpack/HPC module system rather than plain PyPI — install via your
+#  cluster's TensorRT module or NVIDIA's pip index if not already present)
+pycuda>=2024.1
+numpy>=1.26.0
+opencv-python-headless>=4.9.0
+tqdm>=4.66.0
+pandas>=2.2.0
+
+# Dataset download helper
+roboflow>=1.1.0
+
+# ROS2 dependencies (rclpy, vision_msgs, cv_bridge, sensor_msgs) are
+# provided by your ROS2 distro install (e.g. apt install ros-humble-*),
+# not pip — see docker/Dockerfile for a full environment.

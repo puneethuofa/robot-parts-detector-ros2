@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Weights / data / engines (large binaries — don't commit)
+weights/
+data/
+*.pt
+*.onnx
+*.engine
+*.trt
+*.bag
+*.db3
+
+# ROS2 build artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# SLURM logs
+train/slurm-*.out
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
