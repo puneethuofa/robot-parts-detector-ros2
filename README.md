@@ -73,14 +73,6 @@ python optimize/benchmark.py --onnx weights/detector.onnx \
     --engine weights/detector_fp16.engine --imgsz 640 --iters 500
 ```
 
-Prints a table like:
-
-| Backend            | Avg latency (ms) | FPS  | GPU util (%) |
-|---------------------|------------------:|-----:|-------------:|
-| PyTorch (.pt)        |              XX.X | XX.X |          XX |
-| ONNX Runtime (CUDA)  |              XX.X | XX.X |          XX |
-| TensorRT FP16         |              XX.X | XX.X |          XX |
-
 Numbers depend on your GPU — fill the actual run output into
 `docs/benchmark_template.md` for your README/resume.
 
